@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DHRUV — Search smarter. Learn faster.</title>
+<meta name="description" content="DHRUV is a technology platform bringing search, AI and learning together.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#07111f;color:#eef5ff;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:rgba(7,17,31,.78);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:900;letter-spacing:.16em}.links{display:flex;gap:26px;color:#aebbd0;font-size:14px}.links a:hover{color:#fff}
+.hero{text-align:center;padding:105px 0 80px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#2563eb33,transparent 65%);top:-250px;left:50%;transform:translateX(-50%);pointer-events:none}
+.badge{display:inline-block;border:1px solid #ffffff1c;background:#ffffff08;border-radius:999px;padding:7px 14px;color:#bcd0ed;font-size:13px;margin-bottom:22px}.hero h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:0 auto 20px;max-width:850px;letter-spacing:-.05em}.hero h1 span{background:linear-gradient(90deg,#fff,#78a9ff);-webkit-background-clip:text;color:transparent}.hero p{max-width:680px;margin:0 auto 32px;color:#9eacc1;font-size:18px}
+.search{max-width:760px;margin:auto;display:flex;gap:10px;padding:9px;background:#ffffff0b;border:1px solid #ffffff18;border-radius:18px;box-shadow:0 20px 70px #0005}.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:#fff;padding:15px;font-size:16px}.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:700;cursor:pointer}.primary{background:#fff;color:#07111f}.secondary{background:#17283f;color:#dce9ff;border:1px solid #ffffff14}
+.actions{display:flex;justify-content:center;gap:12px;margin-top:16px}.section{padding:70px 0}.section h2{text-align:center;font-size:34px;margin:0 0 10px}.sub{text-align:center;color:#94a3b8;margin:0 auto 38px;max-width:650px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:27px;border:1px solid #ffffff12;background:linear-gradient(145deg,#ffffff0b,#ffffff04);border-radius:20px}.icon{font-size:28px}.card h3{margin:15px 0 8px;font-size:21px}.card p{color:#9eacc1;margin:0}.vision{border:1px solid #ffffff12;background:#ffffff06;border-radius:26px;padding:42px;text-align:center}.vision p{color:#aab8cb;max-width:760px;margin:12px auto 0;font-size:17px}footer{border-top:1px solid #ffffff12;padding:28px 0;color:#78879c;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:720px){.links{display:none}.hero{padding-top:75px}.search{flex-direction:column}.grid{grid-template-columns:1fr}.vision{padding:28px}.actions{flex-direction:column}.actions .btn{width:100%}footer{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="logo">DHRUV</div><div class="links"><a href="#products">Products</a><a href="#vision">Vision</a><a href="#about">About</a></div></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="badge">A new technology platform</div>
+<h1>Search smarter.<br><span>Learn faster.</span></h1>
+<p>DHRUV brings search, AI and learning together in one simple experience — built to help people discover, understand and create.</p>
+<div class="search"><input id="q" placeholder="Search the web..." aria-label="Search"><button class="btn primary" onclick="searchWeb()">Search</button></div>
+<div class="actions"><button class="btn secondary" onclick="ask()">Ask DHRUV AI</button><a class="btn secondary" href="#products">Explore DHRUV</a></div>
+</div></section>
+<section class="section" id="products"><div class="wrap">
+<h2>The DHRUV ecosystem</h2><p class="sub">Start with the core products and grow into a complete technology ecosystem.</p>
+<div class="grid">
+<div class="card"><div class="icon">⌕</div><h3>DHRUV Search</h3><p>Find information quickly with a clean, focused search experience.</p></div>
+<div class="card"><div class="icon">✦</div><h3>DHRUV AI</h3><p>An AI assistant designed to explain ideas clearly and help you create.</p></div>
+<div class="card"><div class="icon">◈</div><h3>DHRUV Learn</h3><p>Turn difficult concepts into simple explanations, examples and practice.</p></div>
+</div></div></section>
+<section class="section" id="vision"><div class="wrap"><div class="vision"><h2>Our vision</h2><p>Build useful technology that feels simple, fast and accessible — while giving people better ways to search, learn and solve problems.</p></div></div></section>
+<section class="section" id="about"><div class="wrap"><h2>Welcome to DHRUV</h2><p class="sub">This is the first public version of the DHRUV platform. More products and real AI services can be added as the company grows.</p></div></section>
+</main>
+<footer><div class="wrap" style="width:100%;display:flex;justify-content:space-between"><span>© 2026 DHRUV</span><span>Search • AI • Learn</span></div></footer>
+<script>
+function searchWeb(){const q=document.getElementById('q').value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(q),'_blank')}
+function ask(){const q=document.getElementById('q').value.trim();alert(q?'DHRUV AI prototype: “'+q+'”\n\nThe AI service will be connected in a future version.':'Type a question in the search box first.')}
+</script>
+</body>
+</html>
